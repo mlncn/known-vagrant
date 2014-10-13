@@ -34,6 +34,7 @@ chmod -R u+w /vagrant/web/data
 
 if [ ! -d /var/lib/mysql/known ]; then
 	mysqladmin -u root create known
+  mysql known < /vagrant/web/schemas/mysql/mysql.sql
 fi
 
 if [ -L /etc/apache2/sites-enabled/000-default ]; then
