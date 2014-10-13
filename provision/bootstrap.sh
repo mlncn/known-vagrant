@@ -6,6 +6,11 @@ apt-get -y install php5-curl
 apt-get -y autoremove
 
 cp -r /vagrant/provision/etc/* /etc/
+
+if [ ! -L /vagrant/web ]; then
+	mkdir /vagrant/web
+fi
+
 cp /vagrant/provision/config.ini /vagrant/web/config.ini
 
 cp /vagrant/provision/.my.cnf /vagrant/web/.my.cnf
