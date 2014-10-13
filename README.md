@@ -14,4 +14,4 @@ E.g.:
 
 It will download a base Debian virtualbox (currently one also used for Agaric's Drupal projects but still pretty light weight) and provision it for Known (mostly, adding PHP Curl and setting up the database and file storage).
 
-Offered by Agaric - http://agaric.coop - to the IndieWeb community (see http://indiewebcamp.com/ for more!).
+Offered by [Agaric](http://agaric.coop) to the [IndieWeb community](http://indiewebcamp.com/).
