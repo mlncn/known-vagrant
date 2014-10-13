@@ -47,4 +47,3 @@ fi
 
 service apache2 restart
 
-cd /vagrant && mysql 
