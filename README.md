@@ -1,7 +1,7 @@
 known-vagrant
 =============
 
-A Vagrantfile and provisioning for running Known (see http://withknown.com/ for more info).
+A Vagrantfile and provisioning for running [Known](http://withknown.com/).
 
 Install VirtualBox from https://www.virtualbox.org/ and Vagrant per http://www.vagrantup.com/ first.
 
@@ -9,8 +9,8 @@ Download this directory (from tarball is recommended) and name it whatever you w
 
 E.g.:
 
-  cd example
-  vagrant up
+`cd example`  
+`vagrant up`
 
 It will download a base Debian virtualbox (currently one also used for Agaric's Drupal projects but still pretty light weight) and provision it for Known (mostly, adding PHP Curl and setting up the database and file storage).
 
