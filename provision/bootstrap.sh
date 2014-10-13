@@ -15,7 +15,9 @@ if [ -L /vagrant/web/config.ini ]; then
   cp /vagrant/provision/config.ini /vagrant/web/config.ini
 fi
 
-cp /vagrant/provision/.my.cnf /vagrant/web/.my.cnf
+if [ -L /home/vagrant/.my.cnf ]; then
+  cp /vagrant/provision/.my.cnf /home/vagrant/.my.cnf
+fi
 
 export FILES=/var/local/known
 if [ ! -d $FILES ]; then
