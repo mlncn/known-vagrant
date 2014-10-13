@@ -8,7 +8,7 @@ apt-get -y autoremove
 cp -r /vagrant/provision/etc/* /etc/
 
 if [ ! -L /vagrant/web ]; then
-	mkdir /vagrant/web
+  git clone --recursive git@github.com:idno/idno.git /vagrant/web
 fi
 
 cp /vagrant/provision/config.ini /vagrant/web/config.ini
