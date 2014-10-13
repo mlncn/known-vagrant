@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 export DEBIAN_FRONTEND=noninteractive
-cp -r /vagrant/provision/etc/apt/* /etc/apt/
 apt-get update
 apt-get -y upgrade
 apt-get -y install php5-curl
