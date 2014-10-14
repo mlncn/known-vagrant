@@ -46,5 +46,6 @@ if [ ! -L /etc/apache2/sites-enabled/known ]; then
 	a2ensite known
 fi
 
+a2enmod rewrite
 service apache2 restart
 
