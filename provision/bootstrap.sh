@@ -2,7 +2,8 @@
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get -y upgrade
-apt-get -y install apache2 git-core mysql-client mysql-server php5-curl php5-mysql
+apt-get -y install apache2 git-core mysql-client mysql-server \
+                   php5 php5-curl php5-gd php5-mysql php5-xmlrpc
 apt-get -y autoremove
 
 cp -r /vagrant/provision/etc/* /etc/
