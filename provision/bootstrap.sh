@@ -12,11 +12,11 @@ if [ ! -L /vagrant/web ]; then
   git clone --recursive git@github.com:idno/idno.git /vagrant/web
 fi
 
-if [ -L /vagrant/web/config.ini ]; then
+if [ ! -L /vagrant/web/config.ini ]; then
   cp /vagrant/provision/config.ini /vagrant/web/config.ini
 fi
 
-if [ -L /home/vagrant/.my.cnf ]; then
+if [ ! -L /home/vagrant/.my.cnf ]; then
   cp /vagrant/provision/.my.cnf /home/vagrant/.my.cnf
 fi
 
